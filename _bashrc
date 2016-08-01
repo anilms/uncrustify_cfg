@@ -1,0 +1,6 @@
+#~/.bashrc
+
+function rununcrustify() {
+  uncrustify -c ~/.uncrustify.cfg --no-backup --replace ${1} ;
+}
+
