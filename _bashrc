@@ -1,6 +1,7 @@
 #~/.bashrc
 
-function rununcrustify() {
-  uncrustify -c ~/.uncrustify.cfg --no-backup --replace ${1} ;
+function reindent() {
+  #uncrustify -c ~/.uncrustify.cfg --no-backup --replace ${1} ;
+  clang-format -style='{BasedOnStyle: Google, ColumnLimit: 120}' -i $i
 }
 
