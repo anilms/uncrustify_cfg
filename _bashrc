@@ -2,6 +2,6 @@
 
 function reindent() {
   #uncrustify -c ~/.uncrustify.cfg --no-backup --replace ${1} ;
-  clang-format -style='{BasedOnStyle: Google, ColumnLimit: 120, SortIncludes: false}' -i ${1}
+  clang-format -style='{BasedOnStyle: Google, ColumnLimit: 0, SortIncludes: false}' -i ${1}
 }
 
